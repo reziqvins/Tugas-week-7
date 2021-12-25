@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/dp20"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dp10"
+    android:layout_margin="@dimen/dp10">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp10">
+       <ImageView
+           android:id="@+id/cpu"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:src="@drawable/intel" />
+        <TextView
+            android:id="@+id/intel1"
+            android:text="@string/intel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/cpu"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            />
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Spesifikasi"
+            android:layout_toEndOf="@id/cpu"
+            android:layout_below="@id/intel1"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"/>
+
+
+    </RelativeLayout>
+
+    
+
+
+
+</androidx.cardview.widget.CardView>
